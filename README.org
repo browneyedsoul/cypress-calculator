@@ -1,4 +1,4 @@
-* Cypress with Calculator
+* Calculator built with E2E Cypress Test Method
 
 ** Install
 #+begin_src sh

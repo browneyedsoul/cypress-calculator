@@ -1,5 +1,12 @@
 {
+  "private": true,
+  "author": "Min-Ki Park",
+  "scripts": {
+    "test": "npx cypress open",
+    "sass": "sass --watch --style=compressed --no-source-map src/css/scss/index.scss:src/css/index.css"
+  },
   "devDependencies": {
-    "cypress": "^12.15.0"
+    "cypress": "^12.15.0",
+    "sass": "^1.63.6"
   }
 }
