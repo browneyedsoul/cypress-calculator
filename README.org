@@ -1,0 +1,12 @@
+* Cypress with Calculator
+
+** Install
+#+begin_src sh
+npm install --save-dev cypress
+#+end_src
+
+** Run Cypress
+#+begin_src sh
+npx cypress open
+#+end_src
+
