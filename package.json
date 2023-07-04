@@ -1,4 +1,7 @@
 {
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "A calculator built with cypress e2e test-driven development",
   "private": true,
   "author": "Min-Ki Park",
   "scripts": {

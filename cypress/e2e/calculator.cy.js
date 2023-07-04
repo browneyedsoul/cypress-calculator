@@ -6,6 +6,9 @@ const clickDigitButtons = (digits = []) => {
 const clickOperationButtons = (operation) => {
   cy.get(".operator").contains(operation).click();
 };
+const clickBracketButtons = (bracket) => {
+  cy.get(".brackets").contains(bracket).click();
+};
 const clickAllClearButtons = () => {
   cy.get(".all-clear").click();
 };
@@ -57,6 +60,17 @@ describe("Test Calculator app", () => {
     checkDisplayValue("123+456");
   });
 
+  it("Bracket Test", () => {
+    clickDigitButtons(["1", "2", "3"]);
+    clickOperationButtons("+");
+    clickBracketButtons("(");
+    clickDigitButtons(["4", "5", "6"]);
+    clickBracketButtons(")");
+    clickOperationButtons("*");
+    clickDigitButtons(["1", "0"]);
+    clickOperationButtons("=");
+    checkDisplayValue("4683");
+  });
   it("Plus Test", () => {
     clickDigitButtons(["1", "2", "3"]);
     clickOperationButtons("+");

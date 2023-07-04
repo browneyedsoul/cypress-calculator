@@ -1,6 +1,7 @@
 :root {
-    --cal-btn-bg: #efefef;
+    --cal-btn-bg: #EFEFEF;
     --cal-btn-complete-bg: #ccc;
+    --cal-btn-bracket-bg: #ccc;
     --cal-btn-border: #333333;
     --cal-operator-bg: #F5B43C;
     --cal-num-total: #FFF;
@@ -89,6 +90,14 @@ button {
             button {
                 background-color: var(--cal-btn-complete-bg);
             }
+            .bracket {
+                font-size: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--cal-btn-bracket-bg);
+                border: 0.05rem solid var(--cal-btn-border);
+            }
         }
 
         .operators {
@@ -108,19 +117,6 @@ button {
                     > .operation {
                         border-bottom-right-radius: .4rem;
                     }
-                }
-                .operation.multiply {
-                    // display: block;
-                    // &::before{
-                    //     content: "×";
-                    //     display: flex;
-                    //     align-items: center;
-                    //     justify-content: center;
-                    //     width: 100%;
-                    //     height: 1rem;
-                    //     position: relative;
-                    //     z-index: 2
-                    // }
                 }
             }
         }
