@@ -1,12 +1,14 @@
 * Calculator built with E2E Cypress Test Method
+#+ATTR_ORG: :width 500
+[[~/Documents/GitHub/practice/cypress-calculator/public/calculator.png]]
 
 ** Install
 #+begin_src sh
 npm install --save-dev cypress
 #+end_src
 
-** Run Cypress
+** Run Cypress Test
 #+begin_src sh
-npx cypress open
+test
 #+end_src
 
