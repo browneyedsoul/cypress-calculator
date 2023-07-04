@@ -1,6 +1,6 @@
 * Calculator built with E2E Cypress Test Method
 #+ATTR_ORG: :width 500
-[[~/public/calculator.png]]
+[[/public/calculator.png]]
 
 ** Install
 #+begin_src sh
